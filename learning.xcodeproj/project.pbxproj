@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15F326F291EE38900F1E59E /* AppContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F326E291EE38900F1E59E /* AppContainerView.swift */; };
+		A15F32712920286800F1E59E /* WordScrambleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F32702920286800F1E59E /* WordScrambleView.swift */; };
+		A15F32732920311600F1E59E /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = A15F32722920311600F1E59E /* start.txt */; };
 		A1C87642291EC7A00028F07B /* learningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C87641291EC7A00028F07B /* learningApp.swift */; };
-		A1C87644291EC7A00028F07B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C87643291EC7A00028F07B /* ContentView.swift */; };
+		A1C87644291EC7A00028F07B /* GuessTheFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C87643291EC7A00028F07B /* GuessTheFlagView.swift */; };
 		A1C87646291EC7A20028F07B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C87645291EC7A20028F07B /* Assets.xcassets */; };
 		A1C87649291EC7A20028F07B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C87648291EC7A20028F07B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A15F326E291EE38900F1E59E /* AppContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerView.swift; sourceTree = "<group>"; };
+		A15F32702920286800F1E59E /* WordScrambleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleView.swift; sourceTree = "<group>"; };
+		A15F32722920311600F1E59E /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		A1C8763E291EC7A00028F07B /* learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C87641291EC7A00028F07B /* learningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningApp.swift; sourceTree = "<group>"; };
-		A1C87643291EC7A00028F07B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1C87643291EC7A00028F07B /* GuessTheFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagView.swift; sourceTree = "<group>"; };
 		A1C87645291EC7A20028F07B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1C87648291EC7A20028F07B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				A1C87641291EC7A00028F07B /* learningApp.swift */,
-				A1C87643291EC7A00028F07B /* ContentView.swift */,
+				A15F32702920286800F1E59E /* WordScrambleView.swift */,
+				A15F326E291EE38900F1E59E /* AppContainerView.swift */,
+				A1C87643291EC7A00028F07B /* GuessTheFlagView.swift */,
+				A15F32722920311600F1E59E /* start.txt */,
 				A1C87645291EC7A20028F07B /* Assets.xcassets */,
 				A1C87647291EC7A20028F07B /* Preview Content */,
 			);
@@ -126,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C87649291EC7A20028F07B /* Preview Assets.xcassets in Resources */,
+				A15F32732920311600F1E59E /* start.txt in Resources */,
 				A1C87646291EC7A20028F07B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C87644291EC7A00028F07B /* ContentView.swift in Sources */,
+				A15F326F291EE38900F1E59E /* AppContainerView.swift in Sources */,
+				A15F32712920286800F1E59E /* WordScrambleView.swift in Sources */,
+				A1C87644291EC7A00028F07B /* GuessTheFlagView.swift in Sources */,
 				A1C87642291EC7A00028F07B /* learningApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
