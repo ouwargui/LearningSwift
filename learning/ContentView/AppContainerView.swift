@@ -11,12 +11,18 @@ struct AppContainerView: View {
   var body: some View {
     NavigationStack {
       List {
-        Section("Beginner") {
+        Section("Games") {
           NavigationLink("Guess the flag") {
             GuessTheFlagView()
           }
           NavigationLink("Word Scramble") {
             WordScrambleView()
+          }
+        }
+
+        Section("Utils") {
+          NavigationLink("iExpense") {
+            iExpenseView()
           }
         }
       }

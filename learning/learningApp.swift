@@ -15,3 +15,9 @@ struct learningApp: App {
         }
     }
 }
+
+struct Previews_learningApp_Previews: PreviewProvider {
+  static var previews: some View {
+    AppContainerView()
+  }
+}

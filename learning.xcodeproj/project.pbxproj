@@ -10,6 +10,10 @@
 		A15F326F291EE38900F1E59E /* AppContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F326E291EE38900F1E59E /* AppContainerView.swift */; };
 		A15F32712920286800F1E59E /* WordScrambleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F32702920286800F1E59E /* WordScrambleView.swift */; };
 		A15F32732920311600F1E59E /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = A15F32722920311600F1E59E /* start.txt */; };
+		A15F327A292066DA00F1E59E /* iExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F3279292066DA00F1E59E /* iExpenseView.swift */; };
+		A15F327C2920679B00F1E59E /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F327B2920679B00F1E59E /* Expenses.swift */; };
+		A15F327E292067CF00F1E59E /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F327D292067CF00F1E59E /* ExpenseItem.swift */; };
+		A15F328029206CE300F1E59E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F327F29206CE300F1E59E /* AddView.swift */; };
 		A1C87642291EC7A00028F07B /* learningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C87641291EC7A00028F07B /* learningApp.swift */; };
 		A1C87644291EC7A00028F07B /* GuessTheFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C87643291EC7A00028F07B /* GuessTheFlagView.swift */; };
 		A1C87646291EC7A20028F07B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C87645291EC7A20028F07B /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 		A15F326E291EE38900F1E59E /* AppContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerView.swift; sourceTree = "<group>"; };
 		A15F32702920286800F1E59E /* WordScrambleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleView.swift; sourceTree = "<group>"; };
 		A15F32722920311600F1E59E /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		A15F3279292066DA00F1E59E /* iExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseView.swift; sourceTree = "<group>"; };
+		A15F327B2920679B00F1E59E /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		A15F327D292067CF00F1E59E /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		A15F327F29206CE300F1E59E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		A1C8763E291EC7A00028F07B /* learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C87641291EC7A00028F07B /* learningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningApp.swift; sourceTree = "<group>"; };
 		A1C87643291EC7A00028F07B /* GuessTheFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagView.swift; sourceTree = "<group>"; };
@@ -38,6 +46,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A15F32742920663600F1E59E /* GuessTheFlag */ = {
+			isa = PBXGroup;
+			children = (
+				A1C87643291EC7A00028F07B /* GuessTheFlagView.swift */,
+			);
+			path = GuessTheFlag;
+			sourceTree = "<group>";
+		};
+		A15F32752920664100F1E59E /* WordScramble */ = {
+			isa = PBXGroup;
+			children = (
+				A15F32702920286800F1E59E /* WordScrambleView.swift */,
+			);
+			path = WordScramble;
+			sourceTree = "<group>";
+		};
+		A15F32762920664F00F1E59E /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				A15F326E291EE38900F1E59E /* AppContainerView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		A15F3278292066C400F1E59E /* iExpense */ = {
+			isa = PBXGroup;
+			children = (
+				A15F3279292066DA00F1E59E /* iExpenseView.swift */,
+				A15F327F29206CE300F1E59E /* AddView.swift */,
+				A15F327B2920679B00F1E59E /* Expenses.swift */,
+				A15F327D292067CF00F1E59E /* ExpenseItem.swift */,
+			);
+			path = iExpense;
+			sourceTree = "<group>";
+		};
 		A1C87635291EC7A00028F07B = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				A1C87641291EC7A00028F07B /* learningApp.swift */,
-				A15F32702920286800F1E59E /* WordScrambleView.swift */,
-				A15F326E291EE38900F1E59E /* AppContainerView.swift */,
-				A1C87643291EC7A00028F07B /* GuessTheFlagView.swift */,
+				A15F3278292066C400F1E59E /* iExpense */,
+				A15F32752920664100F1E59E /* WordScramble */,
+				A15F32762920664F00F1E59E /* ContentView */,
+				A15F32742920663600F1E59E /* GuessTheFlag */,
 				A15F32722920311600F1E59E /* start.txt */,
 				A1C87645291EC7A20028F07B /* Assets.xcassets */,
 				A1C87647291EC7A20028F07B /* Preview Content */,
@@ -147,7 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15F327E292067CF00F1E59E /* ExpenseItem.swift in Sources */,
+				A15F327C2920679B00F1E59E /* Expenses.swift in Sources */,
+				A15F327A292066DA00F1E59E /* iExpenseView.swift in Sources */,
 				A15F326F291EE38900F1E59E /* AppContainerView.swift in Sources */,
+				A15F328029206CE300F1E59E /* AddView.swift in Sources */,
 				A15F32712920286800F1E59E /* WordScrambleView.swift in Sources */,
 				A1C87644291EC7A00028F07B /* GuessTheFlagView.swift in Sources */,
 				A1C87642291EC7A00028F07B /* learningApp.swift in Sources */,

@@ -17,30 +17,28 @@ struct WordScrambleView: View {
   @State private var showingError = false
 
   var body: some View {
-    NavigationView {
-      List {
-        Section {
-          TextField("Enter a word", text: $newWord)
-            .textInputAutocapitalization(.never)
-        }
+    List {
+      Section {
+        TextField("Enter a word", text: $newWord)
+          .textInputAutocapitalization(.never)
+      }
 
-        Section {
-          ForEach(usedWords, id: \.self) { word in
-            HStack {
-              Image(systemName: "\(word.count).circle.fill")
-              Text(word)
-            }
+      Section {
+        ForEach(usedWords, id: \.self) { word in
+          HStack {
+            Image(systemName: "\(word.count).circle.fill")
+            Text(word)
           }
         }
       }
-      .navigationTitle(rootWord)
-      .onSubmit(addNewWord)
-      .onAppear(perform: startGame)
-      .alert(errorTitle, isPresented: $showingError) {
-        Button("OK", role: .cancel) {}
-      } message: {
-        Text(errorMessage)
-      }
+    }
+    .navigationTitle(rootWord)
+    .onSubmit(addNewWord)
+    .onAppear(perform: startGame)
+    .alert(errorTitle, isPresented: $showingError) {
+      Button("OK", role: .cancel) {}
+    } message: {
+      Text(errorMessage)
     }
   }
 
@@ -120,11 +118,5 @@ struct WordScrambleView: View {
     errorTitle = title
     errorMessage = message
     showingError = true
-  }
-}
-
-struct WordScrambleView_Previews: PreviewProvider {
-  static var previews: some View {
-    WordScrambleView()
   }
 }
